@@ -1,4 +1,4 @@
-rootProject.name = 'teaching-unittest'
+rootProject.name = 'teaching-developertest'
 include 'junit-core'
 include 'mockito-core'
 
