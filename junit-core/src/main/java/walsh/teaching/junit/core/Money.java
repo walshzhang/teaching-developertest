@@ -1,5 +1,7 @@
 package walsh.teaching.junit.core;
 
+import com.google.common.base.MoreObjects;
+
 import java.util.Objects;
 
 public class Money {
@@ -30,5 +32,12 @@ public class Money {
                     && Objects.equals(this.currency, that.currency);
         }
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return MoreObjects.toStringHelper(this)
+                .add("amount", amount)
+                .add("currency", currency).toString();
     }
 }
