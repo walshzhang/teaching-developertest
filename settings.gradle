@@ -1,0 +1,4 @@
+rootProject.name = 'teaching-unittest'
+include 'junit-core'
+include 'mockito-core'
+
