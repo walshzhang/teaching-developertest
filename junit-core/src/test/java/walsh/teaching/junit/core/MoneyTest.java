@@ -37,7 +37,6 @@ public class MoneyTest {
     public void differentAmountShouldNotBeEqual(@FromDataPoints("MONEY") Money money,
                                                 @FromDataPoints("MONEY") Money anotherMoney) {
         assumeThat(money.getAmount(), is(not(anotherMoney.getAmount())));
-        System.out.println("money : " + money + ", another: " + anotherMoney);
         assertThat(money, not(equalTo(anotherMoney)));
     }
 
