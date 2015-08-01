@@ -1,5 +1,5 @@
 # teaching-developertest
-provide some examples about developer test used in classroom.
+provide some examples about developer test used in my teaching.
 it plans to contain following subprojects.
 
 ## junit-core
