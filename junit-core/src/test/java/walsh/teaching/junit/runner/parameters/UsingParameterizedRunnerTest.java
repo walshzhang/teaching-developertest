@@ -3,7 +3,6 @@ package walsh.teaching.junit.runner.parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 
 import java.util.Arrays;
@@ -13,11 +12,17 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 @RunWith(Parameterized.class)
-public class UsingParameterizedRunner {
-    @Parameter
+public class UsingParameterizedRunnerTest {
+    //    @Parameter
     private int input;
-    @Parameter(1)
+    //    @Parameter(1)
     private int expected;
+
+    //    we can use following constructor instead of above Parameter annotation.
+    public UsingParameterizedRunnerTest(int input, int expected) {
+        this.input = input;
+        this.expected = expected;
+    }
 
     @Parameters(name = "{index}:fact({0}) = {1}")
     public static Collection<Object[]> data() {
@@ -26,14 +31,8 @@ public class UsingParameterizedRunner {
         });
     }
 
-    //we can use following constructor instead of above Parameter annotation.
-//    public UsingParameterizedRunner(int input, int expected) {
-//        this.input = input;
-//        this.expected = expected;
-//    }
-
     @Test
-    public void testFactorial() {
+    public void testFibonacci() {
         assertThat(fibonacci(input), is(expected));
     }
 
