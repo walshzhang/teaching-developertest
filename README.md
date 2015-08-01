@@ -14,3 +14,6 @@ it plans to contain following subprojects.
     * @DataPoints and @FromDataPoints
 
 ## mockito-core
+
+## hamcrest-matchers
+* v0.4 add three hamcrest matchers used to assert properites of a Money object in JUnit test.
