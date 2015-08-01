@@ -16,3 +16,9 @@ allprojects {
         compile('com.google.guava:guava:18.0')
     }
 }
+
+project(':hamcrest-matchers') {
+    dependencies {
+        testCompile(project(':junit-core'))
+    }
+}
