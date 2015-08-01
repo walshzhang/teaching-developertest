@@ -12,6 +12,14 @@ it plans to contain following subprojects.
     * @RunWith(Theories.class)
     * @Theory
     * @DataPoints and @FromDataPoints
+* v0.5
+    * @Rule
+        * UsingExceptedExceptionRuleTest
+        * UsingTemporaryFolderRuleTest
+        * Logger is a custom rule named . when this rule is used, 
+        it will log the test information to a specified file.
+        * Files provides some file operation such as read and write.
+        * FilesTest uses Logger and TemporaryFolder rule. 
 
 ## mockito-core
 
