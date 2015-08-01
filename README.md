@@ -20,6 +20,13 @@ it plans to contain following subprojects.
         it will log the test information to a specified file.
         * Files provides some file operation such as read and write.
         * FilesTest uses Logger and TemporaryFolder rule. 
+* v0.6 
+    * @Theory
+        * Between annotation is used in the test method to 
+        annotate it's parameters and define their value scope
+        * BetweenSupplier shows how to generate int values to 
+        assign the parameter of test method in UsingTheoriesTest class.
+        * UsingTheoriesTest use Theories runner
 
 ## mockito-core
 
